@@ -2,6 +2,7 @@
 .search-result {
     width: 361px;
 }
+
 .search {
     position: relative;
     height: var(--search-height);
@@ -18,9 +19,11 @@
         font-size: 1.6rem;
         background-color: transparent;
         caret-color: var(--primary);
+        font-family: var(--font-family);
+
     }
 
-    input:not(:placeholder-shown) ~ .search-btn {
+    input:not(:placeholder-shown)~.search-btn {
         color: rgba(22, 24, 35, 0.75);
     }
 
@@ -63,10 +66,12 @@
     from {
         transform: translateY(-50%) rotate(0);
     }
+
     to {
         transform: translateY(-50%) rotate(360deg);
     }
 }
+
 .search-btn {
     width: var(--search-button-width);
     height: 100%;
