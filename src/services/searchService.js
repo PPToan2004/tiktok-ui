@@ -5,8 +5,8 @@ export const search = async (q, type = 'less') => {
         const res = await httpRequest.get('users/search', {
             params: {
                 q,
-                type
-            }
+                type,
+            },
         });
         return res.data;
     } catch (error) {
